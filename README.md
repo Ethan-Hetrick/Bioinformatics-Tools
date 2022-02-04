@@ -1,5 +1,5 @@
 # Bioinformatics-Tools
-Miscellaneous bioinformatics tools to make things more convenient :D.
+Miscellaneous bioinformatics tools to make life more convenient :D.
 
 ---
 
