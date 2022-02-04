@@ -2,7 +2,7 @@
 Miscellaneous bioinformatics tools to make things more convenient :D.
 
 
-#fasterq-dump-auto.py
+# fasterq-dump-auto.py
 
 Program versions: Python 3.7.0 and "fasterq-dump" version 2.11.3
 Python modules: subprocess and argparse
