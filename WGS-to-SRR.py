@@ -3,8 +3,8 @@ import time
 import argparse
 
 parser = argparse.ArgumentParser()
-parser.add_argument("-i", "--input", type=str, help="Path to SRR list text file.")
-parser.add_argument("-o", "--output", type=str, help="Path to output.")
+parser.add_argument("-i", "--input", type=str, help="Path to WGS list text file.")
+parser.add_argument("-o", "--output", type=str, help="Path to output file name.")
 args = parser.parse_args()
 
 
