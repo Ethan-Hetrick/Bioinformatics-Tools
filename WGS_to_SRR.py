@@ -9,8 +9,8 @@ args = parser.parse_args()
 
 
 def WGS_IDtoSRR(WGS_ID):
-    Entrez.api_key = "31b7d905b897989c39b12f39e77c58884508"
-    Entrez.email = "rqu4@cdc.gov"
+    Entrez.api_key = "ENTER NCBI API KEY HERE"
+    Entrez.email = "ENTER EMAIL HERE"
     handle = Entrez.esearch(db="SRA", term=WGS_ID, idtype="External Id", retmax=40)
     record = Entrez.read(handle)
     SRAID = (record["IdList"][0])
