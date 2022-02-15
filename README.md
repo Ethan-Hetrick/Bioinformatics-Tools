@@ -33,3 +33,14 @@ used to validate a list of SRR IDs. This used the BioPython module Entrez import
 Usage: fasterq-dump.py [-h] [-i list.txt] [-o set output file name]
   
   ---
+  
+  ### *SS2-parser.py* *IN BETA*
+  
+  Works with: Python 3.7.0 and SeqSero2
+  
+  Tabulates SeqSero2 output. Takes a text file of the SeqSero2 results summary. You can concatenate all the "Seqsero_result.txt" files of SeqSero2 output directories and load  this in. 
+  
+  Usage [-h] [-i SeqSero2-Results.txt]
+  
+  ---
+  
