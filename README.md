@@ -34,13 +34,24 @@ Usage: fasterq-dump.py [-h] [-i list.txt] [-o set output file name]
   
   ---
   
-  ### *SS2-parser.py* *IN BETA*
+  ### *SS2-parser.py*
   
   Works with: Python 3.7.0 and SeqSero2
   
-  Tabulates SeqSero2 output. Takes a text file of the SeqSero2 results summary. You can concatenate all the "Seqsero_result.txt" files of SeqSero2 output directories and load  this in. 
+  Tabulates SeqSero2 output. Takes a text file of the SeqSero2 results summary. You can concatenate all the "Seqsero_result.txt" files of SeqSero2 output directories and input that.
   
-  Usage [-h] [-i SeqSero2-Results.txt]
+  Usage SS2-parser.py [-h] [-i SeqSero2-Results.txt]
   
   ---
+  
+  ### *flanking-gene-extractor.py*
+  
+  Works with: Python 3.7.0 and BLAST 2.9.0+
+  
+  Extracts the gene upstream of a target sequence. This was built to use with Prokka genbank and .ffn (nucleotide gene list) files. It first finds the hit in a list of annotated CDSs, searches the Genbank file for the annotation to determine the gene orientation (i.e. is it on the complement or template strand) and then extracts the gene upstream of it (only the CDS) from the .ffn file. The script will output a fasta file of the upstream gene. 
+  
+  Usage flanking-gene-extractor.py [-h] [-a annotation.ffn] [-g genbank.gbk] [-q query.fasta] [-o output-file-name.fasta]
+  
+  ---
+  
   
