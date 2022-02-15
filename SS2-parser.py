@@ -13,8 +13,7 @@ def parse_SS2(input):
             input, antigenic_profile, serotype, note, subspecies = "", "", "", "", ""
             for line in result.split("\n"):
                 if "Input files:" in line:
-                    input = line.split("files:")[1].strip().strip(".fastq")
-                    input = input.split("_1")[0].strip()
+                    input = line.split("files:")[1].strip()
                 elif "Predicted antigenic profile:" in line:
                     antigenic_profile = line.split("profile:")[1].strip()
                 elif "Predicted subspecies:" in line:
