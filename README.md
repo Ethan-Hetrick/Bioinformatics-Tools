@@ -3,6 +3,17 @@ Miscellaneous bioinformatics tools to make life more convenient :D.
 
 ---
 
+### *blast-hit-extractor.py*
+Works with: Python 3.7.0 and BLAST 2.9.0+
+Python modules: argparse
+
+Takes tabular BLASTn results (-outfmt 6) and extracts the hit and a designated number of flanking nucleotides from a genome assembly
+in FASTA format.
+
+Usage: blast-hit-extractor.py [-h] [-a assembly.fasta] [-i BLAST-results.txt] [-n number of nucleotides]
+
+---
+
 ### *fasterq-dump-auto.py*
 
 Works with: Python 3.7.0 and "fasterq-dump" version 2.11.3
